@@ -1,0 +1,7 @@
+beautifulsoup4
+markdownify
+playwright
+requests
+fastapi
+uvicorn
+
