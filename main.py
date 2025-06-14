@@ -5,6 +5,12 @@ import json
 import os
 
 app = FastAPI()
+@app.get("/")
+def read_root():
+    return {
+        "message": "Welcome to TDS Virtual TA API! Visit /docs for API documentation."
+    }
+
 
 # Load discourse data
 with open("discourse_posts.json", "r", encoding="utf-8") as f:
